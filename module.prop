@@ -1,7 +1,7 @@
 id=OPlusLauncher
 name=OPlus Launcher 34
-version=v0.7
-versionCode=7
+version=v0.8
+versionCode=8
 author=Rei Ryuki the Fixer
 description=Home launcher app target SDK 34 by OnePlus Ltd. ported for any Android 14 (SDK 34) and up.
 
