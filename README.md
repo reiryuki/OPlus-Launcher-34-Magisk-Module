@@ -50,7 +50,7 @@
 - The animation when opening an app looks a bit strange
 - Icons option doesn't work
 - No freeform window option in the recents provider if it's activated
-- Pressing recents button from splitscreen resulting in UI bug. Just force-stop the launcher or run `su -c am force-stop com.oplus.launcher` to fix that.
+- Recents button doesn't work from splitscreen mode
 
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
