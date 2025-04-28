@@ -51,6 +51,7 @@
 - Icons option doesn't work
 - No freeform window option in the recents provider if it's activated
 - Recents button doesn't work from splitscreen mode
+- Does not support navbar overlay in Android 15 QPR2 ROMs and up if recents provider is activated
 
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
