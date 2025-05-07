@@ -29,11 +29,18 @@
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (enable show system apps) and reboot afterwards
 - Change your default home to this launcher via Settings app (or you can copy the content of default.sh and paste it to Terminal/Termux app. Type su and grant root first!)
+- If your device using hardware navigation bar, then run this terminal command to remove the empty space at the bottom screen:
+
+  `su`
+  
+  `settings put secure settings_navigation_bar_combination 2`
+  
+  To reverse it back just change the value 2 to 0.
 - If you are using multi user or Work Profile, don't forget to allow "Display over other apps" manually at the App Info or you can run this terminal command instead:
 
-`su`
+  `su`
 
-`appops set com.oplus.launcher SYSTEM_ALERT_WINDOW allow`
+  `appops set com.oplus.launcher SYSTEM_ALERT_WINDOW allow`
 
 
 ## Optionals
@@ -46,7 +53,6 @@
 
 ## Known Issues
 - Full gesture navigation doesn't work
-- There is a space at the bottom in device that uses hardware navigation bar
 - The animation when opening an app looks a bit strange
 - Icons option doesn't work
 - No freeform window option in the recents provider if it's activated
