@@ -57,6 +57,7 @@ fi
 PKG=com.oplus.athena
 if appops get $PKG > /dev/null 2>&1; then
   appops set $PKG SYSTEM_ALERT_WINDOW allow
+  appops set $PKG GET_USAGE_STATS allow
   if [ "$API" -ge 33 ]; then
     appops set $PKG ACCESS_RESTRICTED_SETTINGS allow
   fi
