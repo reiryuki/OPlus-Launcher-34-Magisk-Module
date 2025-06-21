@@ -498,7 +498,7 @@
 		android:fullBackupContent="false"
 		android:usesCleartextTraffic="true"
 		android:defaultToDeviceProtectedStorage="true"
-		android:directBootAware="true"
+		android:directBootAware="false"
 		android:usesNonSdkApi="true"
 		>
 		<uses-library
