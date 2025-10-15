@@ -8,13 +8,21 @@
 	package="com.oplus.launcher"
 	>
 	<uses-sdk
-		android:minSdkVersion="30"
+		android:minSdkVersion="29"
 		android:targetSdkVersion="33"
 		>
 	</uses-sdk>
 	<compatible-screens
 		>
 	</compatible-screens>
+	<uses-permission
+		android:name="android.permission.GET_TASKS"
+		>
+	</uses-permission>
+	<uses-permission
+		android:name="android.permission.REAL_GET_TASKS"
+		>
+	</uses-permission>
 	<uses-permission
 		android:name="android.permission.INPUT_CONSUMER"
 		>
