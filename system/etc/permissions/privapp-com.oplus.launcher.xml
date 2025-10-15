@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.oplus.launcher">
+        <permission name="android.permission.REAL_GET_TASKS"/>
         <permission name="android.permission.ALLOW_SLIPPERY_TOUCHES"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
         <permission name="android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS"/>
@@ -19,7 +20,7 @@
         <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
         <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
-        <!-- Android 9 and bellow -->
+        <!-- SDK 28 and bellow -->
         <permission name="android.permission.READ_FRAME_BUFFER"/>
         <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
     </privapp-permissions>
