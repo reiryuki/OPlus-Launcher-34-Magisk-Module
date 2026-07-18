@@ -199,12 +199,13 @@ for NAME in $NAMES; do
     sh $FILE
     rm -f $FILE
   fi
-  rm -rf /metadata/magisk/$NAME
-  rm -rf /mnt/vendor/persist/magisk/$NAME
-  rm -rf /persist/magisk/$NAME
-  rm -rf /data/unencrypted/magisk/$NAME
-  rm -rf /cache/magisk/$NAME
-  rm -rf /cust/magisk/$NAME
+  rm -rf /metadata/magisk/$NAME\
+   /mnt/vendor/persist/magisk/$NAME\
+   /persist/magisk/$NAME\
+   /data/unencrypted/magisk/$NAME\
+   /cache/magisk/$NAME\
+   /cust/magisk/$NAME\
+   /klogdump/magisk/$NAME
 done
 }
 
@@ -600,7 +601,7 @@ for FILE in $FILES; do
     LIST=`cat $FILE | sed 's|><|>\n<|g'`
     RES=`echo "$LIST" | grep -A$COUNT '<shared-user name="oppo.uid.launcher">'`
     until echo "$RES" | grep -q '</shared-user>'; do
-      COUNT=`expr $COUNT + 1`
+      COUNT=$((COUNT + 1))
       RES=`echo "$LIST" | grep -A$COUNT '<shared-user name="oppo.uid.launcher">'`
     done
     } 2>/dev/null
@@ -763,7 +764,18 @@ if [ "$API" -lt 35 ]; then
   patch_runtime_permisions
 fi
 
-
+# prepare
+DIR=/storage/emulated/"$UID"/Android/data/com.oplus.launcher/files
+DIR2=/storage/emulated/"$UID"/Android/data/com.oplus.uxdesign/files
+DIR3=/storage/emulated/"$UID"/Android/data/com.oplus.uxdesign/cache
+ui_print "- Creating directories:"
+ui_print "  $DIR"
+mkdir -p $DIR
+ui_print "  $DIR2"
+mkdir -p $DIR2
+ui_print "  $DIR3"
+mkdir -p $DIR3
+ui_print " "
 
 
 

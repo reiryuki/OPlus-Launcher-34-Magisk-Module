@@ -2,7 +2,6 @@
 allow system_server system_file file write
 
 # context
-create { system_lib_file vendor_file vendor_configs_file vendor_overlay_file }
 allow { system_file system_lib_file vendor_file vendor_configs_file vendor_overlay_file } labeledfs filesystem associate
 allow init { system_file system_lib_file vendor_file vendor_configs_file vendor_overlay_file } { dir file } relabelfrom
 
@@ -27,5 +26,8 @@ allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untru
 
 # dir
 allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untrusted_app } system_data_file dir { read write open }
+
+## Athena
+allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untrusted_app } cgroup_v2 dir search
 
 
