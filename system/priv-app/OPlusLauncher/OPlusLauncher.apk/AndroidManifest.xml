@@ -16,6 +16,30 @@
 		>
 	</compatible-screens>
 	<uses-permission
+		android:name="android.permission.RECEIVE_SENSITIVE_NOTIFICATIONS"
+		>
+	</uses-permission>
+	<permission
+		android:label="@7F12045B"
+		android:name="com.oplus.launcher.permission.READ_SETTINGS"
+		android:description="@7F120451"
+		>
+	</permission>
+	<permission
+		android:label="@7F12045D"
+		android:name="com.oplus.launcher.permission.WRITE_SETTINGS"
+		android:description="@7F120453"
+		>
+	</permission>
+	<uses-permission
+		android:name="com.oplus.launcher.permission.READ_SETTINGS"
+		>
+	</uses-permission>
+	<uses-permission
+		android:name="com.oplus.launcher.permission.WRITE_SETTINGS"
+		>
+	</uses-permission>
+	<uses-permission
 		android:name="android.permission.GET_TASKS"
 		>
 	</uses-permission>
@@ -345,18 +369,6 @@
 	</permission>
 	<permission
 		android:name="com.oplus.game.empowerment.folder_receiver"
-		>
-	</permission>
-	<permission
-		android:label="@7F12045B"
-		android:name="com.android.launcher.permission.READ_SETTINGS"
-		android:description="@7F120451"
-		>
-	</permission>
-	<permission
-		android:label="@7F12045D"
-		android:name="com.android.launcher.permission.WRITE_SETTINGS"
-		android:description="@7F120453"
 		>
 	</permission>
 	<uses-permission
