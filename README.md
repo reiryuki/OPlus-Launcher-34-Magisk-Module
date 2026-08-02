@@ -81,7 +81,7 @@ https://t.me/androidryukimods/2420
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings and install https://github.com/KernelSU-Modules-Repo/meta-overlayfs or https://github.com/KernelSU-Modules-Repo/magic_mount_rs or https://github.com/KernelSU-Modules-Repo/hybrid_mount or https://github.com/maxsteeel/nomount first depending on ROM compatibility
 - Install OPlus Core Magisk Module v0.2 or above first: https://github.com/reiryuki/OPlus-Core-Magisk-Module
 - If you want to activate the recents provider, READ Optionals bellow!
-- Install this module https://devuploads.com/tqu32hmeja6x via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module https://bicolink.com/fg9aG10 via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (enable show system apps) and reboot afterwards
 - Change your default home to this launcher via Settings app (or you can copy the content of default.sh and paste it to Terminal/Termux app. Type su and grant root first!)
@@ -91,6 +91,9 @@ https://t.me/androidryukimods/2420
 
   `appops set com.oplus.launcher SYSTEM_ALERT_WINDOW allow`
 
+
+## Download Tutorial
+https://t.me/ryukinotes/97
 
 ## Optionals
 - https://t.me/ryukinotes/5
